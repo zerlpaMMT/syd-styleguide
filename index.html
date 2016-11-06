@@ -1,6 +1,37 @@
 <style>
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.296em;
+}
+
+h2 {
+  font-size: 1.215em;
+}
+
+h3 {
+  font-size: 1.138em;
+}
+
+h4 {
+  font-size: 1.067em;
+}
+
+.alternativeH2 {
+  color:#A2DD5F;
+}
+
+p {
+  font-size: 1.0em;
 }
 
 .container {
@@ -29,7 +60,7 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-align: center;
-  background-color: #32db64;
+  background-color: #2c440f;
   height: 100px;
   width: 100px;
 
@@ -59,9 +90,10 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-align: center;
-  background-color: #DD5E3D;
+  background-color: #191919;
   height: 100px;
   width: 100px;
+  color: white;
 
   font-weight: bold;
   display: flex;
@@ -415,6 +447,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     });
 </script>
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 <div id="styleguide-header">
   <div class="logo">
     <img src="img/logo_white.svg"/>
@@ -475,21 +508,20 @@ We chose some shades of green to emphasize the affiliation between Taiga and SYD
         <div class="result">
           <div class="container">
   <div class="primary">#62912F</div>
-  <div class="secondary">#2C430F</div>
+  <div class="secondary">#2C440F</div>
   <div class="header">#A2DD5F</div>
   <div class="dropdown">#43589F</div>
-  <div class="warning">#DD5E3D</div>
+  <div class="warning">#191919</div>
 </div>
         </div>
 
         <div class="markup hljs">
-        <pre>
-        &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"container"</span>&gt;
+        <pre>&lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"container"</span>&gt;
   &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"primary"</span>&gt;<span class="hljs-hexcolor">#62912F</span>&lt;/div&gt;
-  &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"secondary"</span>&gt;<span class="hljs-hexcolor">#2C430F</span>&lt;/div&gt;
+  &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"secondary"</span>&gt;<span class="hljs-hexcolor">#2C440F</span>&lt;/div&gt;
   &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"header"</span>&gt;<span class="hljs-hexcolor">#A2DD5F</span>&lt;/div&gt;
   &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"dropdown"</span>&gt;<span class="hljs-hexcolor">#43589F</span>&lt;/div&gt;
-  &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"warning"</span>&gt;<span class="hljs-hexcolor">#DD5E3D</span>&lt;/div&gt;
+  &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"warning"</span>&gt;<span class="hljs-hexcolor">#191919</span>&lt;/div&gt;
 &lt;/div&gt;
         </pre>
         </div>
@@ -499,8 +531,14 @@ We chose some shades of green to emphasize the affiliation between Taiga and SYD
 
       <div class="comment">
         <h1>03 Logo</h1>
-        <p><img src="img/logo_white.svg" alt="logo_white.svg">
-<a href="./img/logo_white.svg">Download</a></p>
+        <p>
+          <img src="img/logo_white.svg" alt="logo_white.svg">
+          <a href="./img/logo_white.svg" download="logo_white.svg">Download</a>
+        </p>
+        <p>
+          <img src="img/logo_black.svg" alt="logo_black.svg">
+          <a href="./img/logo_black.svg" download="logo_black.svg">Download</a>
+        </p>
       </div>
 
 
@@ -510,11 +548,29 @@ We chose some shades of green to emphasize the affiliation between Taiga and SYD
 
       <div class="comment">
         <h1>04 Typography</h1>
-        <p>As almost 50% of US-websites use OpenSans, we chose to jump on the hypetrain and also use them in our app.</p>
-<p><img src="img/typography.png" alt="Typogrphy"></p>
+        <p>As almost 50% of US-websites use OpenSans, we chose to jump on the hypetrain and also use them in our app.
+1em = 16px</p>
       </div>
 
+        <div class="result">
+          <h1>Header Level 1 (1.296em)</h1>
+<h2>Header Level 2 (1.215em)</h2>
+<h2 class="alternativeH2">Header Level 2 Alternative (1.215em)</h2>
+<h3>Header Level 3 (1.138em)</h3>
+<p>This is a normal text (1em)</p><p>
+<a href="#">This is a link (1em)</a>
+</p>
+        </div>
 
+        <div class="markup hljs">
+        <pre><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Header Level 1 (1.296em)<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Header Level 2 (1.215em)<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alternativeH2"</span>&gt;</span>Header Level 2 Alternative (1.215em)<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Header Level 3 (1.138em)<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This is a normal text (1em)<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>This is a link (1em)<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        </pre>
+        </div>
 
     </div>
     <div class="section" id="Code_Style_Rules-01_Indentation" data-section="Code Style Rules" data-heading="01 Indentation">
