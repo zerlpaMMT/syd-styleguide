@@ -637,7 +637,7 @@ It&apos;s also the recommended to use SASS with the ionic-framework.</p>
           we didn&apos;t want to copy all those documentations on our styleguide.</p>
         <p><a href="http://ionicframework.com/docs/v2/components/">Ionic Components</a></p>
         <h2 class="main-section-sg-by-emiloberg" id="section-ComponentStructure">Buttons</h2>
-        <p><img src="img/buttons.png" width="100%"></p>
+        <p><img src="img/buttons.png" style="max-height:109px;"></p>
         <div class="markup hljs">
         <pre>
           <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">ion-button</span> <span class="hljs-attribute">outline</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">"primary"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -653,7 +653,7 @@ It&apos;s also the recommended to use SASS with the ionic-framework.</p>
       <div class="comment">
         <h1>Form elements</h1>
           <h2>Card</h2>
-          <p><img src="img/ionic-card.png" alt="ionic-card display"></p>
+          <p><img src="img/ionic-card.png" style="max-height:206px;" alt="ionic-card display"></p>
         <pre class="highlight"><code class="hljs xml"><span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-card</span>&gt;</span></span>
   <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-card-header</span>&gt;</span></span>
     Project Header
@@ -665,15 +665,52 @@ It&apos;s also the recommended to use SASS with the ionic-framework.</p>
 </code></pre>
 
           <h2>Icon Button</h2>
-          <p><img src="img/refresh.png" alt="refresh" /></p>
+          <p><img src="img/refresh.png" style="max-height:112px;" alt="refresh" /></p>
           <pre class="highlight"><code class="hljs xml"><span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-icon</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">name</span>=</span></span><span class="s"><span class="hljs-tag"><span class="hljs-value">"refresh"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">ion-icon</span>&gt;</span></span>
             </code>
           </pre>
 
-          <p><img src="img/arrow.png" alt="arrow-round-back" /></p>
+          <p><img src="img/arrow.png" style="max-height:94px;" alt="arrow-round-back" /></p>
           <pre class="highlight"><code class="hljs xml"><span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-icon</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">name</span>=</span></span><span class="s"><span class="hljs-tag"><span class="hljs-value">"arrow-round-back"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">ion-icon</span>&gt;</span></span>
   </code>
           </pre>
+
+
+        <p><img src="img/exit.png" style="max-height:94px;" alt="exit" /></p>
+        <pre class="highlight"><code class="hljs xml"><span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-icon</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">name</span>=</span></span><span class="s"><span class="hljs-tag"><span class="hljs-value">"exit"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">ion-icon</span>&gt;</span></span>
+  </code>
+          </pre>
+
+        <h2>Sliders</h2>
+        <p>
+          <img src="img/slider1.png" alt="segment" />
+          <br>
+          <img src="img/slider2.png" alt="segment" />
+        </p>
+        <pre class="highlight"><code class="hljs xml"><span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-slides</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">pager</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>
+  <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-slide</span></span></span><span class="hljs-tag"></span><span class="na"><span class="hljs-tag"><span class="hljs-attribute"><span class="nt"><span class="hljs-tag">&gt;</span></span>
+    <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span></span>Slide 1<span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span></span>
+  <span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-slide</span>&gt;</span></span>
+
+  <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-slide</span></span></span><span class="hljs-tag"></span><span class="na"><span class="hljs-tag"><span class="hljs-attribute"><span class="nt"><span class="hljs-tag">&gt;</span></span>
+    <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span></span>Slide 2<span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span></span>
+  <span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-slide</span>&gt;</span></span>
+<span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-slides</span>&gt;</span></span>
+</code></pre>
+
+
+
+        <h2>Segment</h2>
+
+        <p><img src="img/segment.png" style="max-height:146px;" alt="segment" /></p>
+        <code class="hljs xml"><span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">div</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">padding</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>
+          <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-segment</span></span></span><span class="hljs-tag"> </span><span class="err"><span class="hljs-tag">[(</span></span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">ngModel</span></span></span><span class="err"><span class="hljs-tag">)]=<span class="hljs-value">"</span></span></span><span class="na"><span class="hljs-tag"><span class="hljs-value">pet</span></span></span><span class="err"><span class="hljs-tag"><span class="hljs-value">"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>
+          <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-segment-button</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">value</span>=</span></span><span class="s"><span class="hljs-tag"><span class="hljs-value">"normal"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>Normal Login<span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-segment-button</span>&gt;</span></span>
+          <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-segment-button</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">value</span>=</span></span><span class="s"><span class="hljs-tag"><span class="hljs-value">"github"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>Github Login<span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-segment-button</span>&gt;</span></span>
+    <span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-segment</span>&gt;</span></span>
+  <span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
+
+        </code>
       </div>
     </div>
   </div>
