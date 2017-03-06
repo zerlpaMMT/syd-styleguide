@@ -614,12 +614,22 @@ It&apos;s also the recommended to use SASS with the ionic-framework.</p>
 
 
     </div>
-    <div class="section" id="Code_Style_Rules-05_Class_naming_conventions" data-section="Code Style Rules" data-heading="05 Class naming conventions">
-
-      <div class="comment">
-        <h1>05 Class naming conventions</h1>
-        <p>Our class namings are based on the smacss-conventions and are utilized in each component as well as the global app.scss</p>
-      </div>
+  <div class="section" id="Code_Style_Rules-05_Class_naming_conventions" data-section="Code Style Rules" data-heading="05 Class naming conventions">
+    <div class="comment">
+      <h1>05 Class naming conventions</h1>
+      <p>Our class namings are based on the smacss-conventions and are utilized in each component as well as the global app.scss</p>
+      <h2 class="main-section-sg-by-emiloberg" id="section-BaseRules">Base Rules</h2>
+      <p>  Base rules are the defaults of our elements and define their basic style like height, width, margin, etc. CSS-Presets are also kind of base rules.</p>
+      <h2 class="main-section-sg-by-emiloberg" id="section-LayoutRules">Layout Rules</h2>
+      <p>  Layout rules as the name suggest are rules that define the layout of the page and holds one or more modules together. Layouts are prefixed accordingly using something like layout- or l-.</p>
+      <h2 class="main-section-sg-by-emiloberg" id="section-ModuleRules">Module Rules</h2>
+      <p>  Modules are the reusable parts of our design and use the name of the module as prefix. For instance the design of a list, the sidebar sections, etc. are modules. </p>
+      <h2 class="main-section-sg-by-emiloberg" id="section-StateRules">State Rules</h2>
+      <p>  Different design in different states can be achieved using state rules. These should be prefixed with is- like in is-hidden or is-active to enhance readability.</p>
+      <h2 class="main-section-sg-by-emiloberg" id="section-ThemeRules">Theme Rules</h2>
+      <p>  Theme rules are much the same as state rules but differ in that they define a global set of designs for theming the site.</p>
+    </div>
+  </div>
 
 
 
@@ -627,8 +637,20 @@ It&apos;s also the recommended to use SASS with the ionic-framework.</p>
     <div class="section" id="Components-Ionic" data-section="Components" data-heading="Ionic">
       <div class="comment">
         <h1>Ionic</h1>
-        <p>Since a bigger part of our app utilizes the components given by the ionicframework and they&apos;re very well documented on their website, we didn&apos;t want to copy all those documentations on our styleguide.</p>
-<p><a href="http://ionicframework.com/docs/v2/components/">Ionic Components</a></p>
+        <p>Since a bigger part of our app utilizes the components given by the ionicframework and they&apos;re very well documented on their website,
+          we didn&apos;t want to copy all those documentations on our styleguide.</p>
+        <p><a href="http://ionicframework.com/docs/v2/components/">Ionic Components</a></p>
+        <h2 class="main-section-sg-by-emiloberg" id="section-ComponentStructure">Buttons</h2>
+        <p><img src="img/buttons.png" width="100%"></p>
+        <div class="markup hljs">
+        <pre>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">ion-button</span> <span class="hljs-attribute">outline</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">"primary"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">ion-button</span> <span class="hljs-attribute">outline</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">"secondary"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">ion-button</span> <span class="hljs-attribute">outline</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">"header"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">ion-button</span> <span class="hljs-attribute">outline</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">"dropdown"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">ion-button</span> <span class="hljs-attribute">outline</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">"warning"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        </pre>
+        </div>
       </div>
     </div>
     <div class="section" id="Components-Form_elements" data-section="Components" data-heading="Form elements">
