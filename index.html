@@ -636,6 +636,13 @@ It&apos;s also the recommended to use SASS with the ionic-framework.</p>
         <p>Since a bigger part of our app utilizes the components given by the ionicframework and they&apos;re very well documented on their website,
           we didn&apos;t want to copy all those documentations on our styleguide.</p>
         <p><a href="http://ionicframework.com/docs/v2/components/">Ionic Components</a></p>
+
+      </div>
+    </div>
+    <div class="section" id="Components-Form_elements" data-section="Components" data-heading="Form elements">
+      <div class="comment">
+        <h1>Form elements</h1>
+
         <h2 class="main-section-sg-by-emiloberg" id="section-ComponentStructure">Buttons</h2>
         <p><img src="img/buttons.png" style="max-height:109px;"></p>
         <div class="markup hljs">
@@ -647,11 +654,7 @@ It&apos;s also the recommended to use SASS with the ionic-framework.</p>
           <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">ion-button</span> <span class="hljs-attribute">outline</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">"warning"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
         </pre>
         </div>
-      </div>
-    </div>
-    <div class="section" id="Components-Form_elements" data-section="Components" data-heading="Form elements">
-      <div class="comment">
-        <h1>Form elements</h1>
+
           <h2>Card</h2>
           <p><img src="img/ionic-card.png" style="max-height:206px;" alt="ionic-card display"></p>
         <pre class="highlight"><code class="hljs xml"><span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-card</span>&gt;</span></span>
@@ -703,14 +706,15 @@ It&apos;s also the recommended to use SASS with the ionic-framework.</p>
         <h2>Segment</h2>
 
         <p><img src="img/segment.png" style="max-height:146px;" alt="segment" /></p>
-        <code class="hljs xml"><span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">div</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">padding</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>
-          <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-segment</span></span></span><span class="hljs-tag"> </span><span class="err"><span class="hljs-tag">[(</span></span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">ngModel</span></span></span><span class="err"><span class="hljs-tag">)]=<span class="hljs-value">"</span></span></span><span class="na"><span class="hljs-tag"><span class="hljs-value">login</span></span></span><span class="err"><span class="hljs-tag"><span class="hljs-value">"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>
-          <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-segment-button</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">value</span>=</span></span><span class="s"><span class="hljs-tag"><span class="hljs-value">"normal"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>Normal Login<span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-segment-button</span>&gt;</span></span>
-          <span class="nt"><span class="hljs-tag">&lt;<span class="hljs-title">ion-segment-button</span></span></span><span class="hljs-tag"> </span><span class="na"><span class="hljs-tag"><span class="hljs-attribute">value</span>=</span></span><span class="s"><span class="hljs-tag"><span class="hljs-value">"github"</span></span></span><span class="nt"><span class="hljs-tag">&gt;</span></span>Github Login<span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-segment-button</span>&gt;</span></span>
-    <span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">ion-segment</span>&gt;</span></span>
-  <span class="nt"><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
-
-        </code>
+        <span class="nt">&lt;ion-segment</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]="</span><span class="na">pet</span><span class="err">"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ion-segment-button</span> <span class="na">value=</span><span class="s">"kittens"</span><span class="nt">&gt;</span>
+        Kittens
+        <span class="nt">&lt;/ion-segment-button&gt;</span>
+        <span class="nt">&lt;ion-segment-button</span> <span class="na">value=</span><span class="s">"puppies"</span><span class="nt">&gt;</span>
+        Puppies
+        <span class="nt">&lt;/ion-segment-button&gt;</span>
+        <span class="nt">&lt;/ion-segment&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
 
         <h2>Checkbox</h2>
         <p><img src="img/checkbox.png" style="max-height:62px;" alt="checkbox" /></p>
