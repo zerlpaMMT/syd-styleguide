@@ -898,7 +898,7 @@ button.list-group-item-danger.active:focus {
 
 
     </div>
-    <div class="section" id="Code_Style_Rules-05_Class_naming_conventions" data-section="Code Style Rules"
+        <div class="section" id="Code_Style_Rules-05_Class_naming_conventions" data-section="Code Style Rules"
          data-heading="05 Class naming conventions">
         <div class="comment">
             <h1>05 Class naming conventions</h1>
@@ -906,19 +906,96 @@ button.list-group-item-danger.active:focus {
                 global app.scss</p>
             <h2 class="main-section-sg-by-emiloberg" id="section-BaseRules">Base Rules</h2>
             <p> Base rules are the defaults of our elements and define their basic style like height, width, margin,
-                etc. CSS-Presets are also kind of base rules.</p>
+                etc. CSS-Presets are also kind of base rules. Base style include setting the  head size,the defaults like the link styles,font styles and body background.</p>
+                <div class="result"><code style="color:black;">
+          //example Base Styles
+          body, form {
+              margin: 0;
+              padding: 0;
+          }
+
+          a {
+              color: #039;
+          }
+
+          a:hover {
+              color: #03F;    
+          }
+                  </code>
+                </div>
+             
+                
+             
             <h2 class="main-section-sg-by-emiloberg" id="section-LayoutRules">Layout Rules</h2>
             <p> Layout rules as the name suggest are rules that define the layout of the page and holds one or more
-                modules together. Layouts are prefixed accordingly using something like layout- or l-.</p>
+                modules together. Layouts are prefixed accordingly using something like layout- or l-. </p>
+                <div class="result">
+                <code style="color:black;">
+        //Layout examples
+        #header, #article, #footer {
+            width: 960px;
+            margin: auto;
+        }
+
+        #article {
+            border: solid #CCC;
+            border-width: 1px 0 0;
+        }
+        .l-flipped #article {
+            float: right;
+        }
+                  </code>
+                </div>
+
+
             <h2 class="main-section-sg-by-emiloberg" id="section-ModuleRules">Module Rules</h2>
             <p> Modules are the reusable parts of our design and use the name of the module as prefix. For instance the
-                design of a list, the sidebar sections, etc. are modules. </p>
+                design of a list, the sidebar sections, etc. are modules. Like we mentioned before, a Module sit inside a Layout but it is also possible that a Module sits within another Module. Also it is better to not use element selectors, use child or descendant selectors with element selectors. </p>
+                <div class="result"><code style="color:black;">
+          .module > h2 {
+              padding: 5px;
+          }
+
+          .module span {
+              padding: 5px;
+          }
+                  </code>
+                </div>
             <h2 class="main-section-sg-by-emiloberg" id="section-StateRules">State Rules</h2>
             <p> Different design in different states can be achieved using state rules. These should be prefixed with
-                is- like in is-hidden or is-active to enhance readability.</p>
+                is- like in is-hidden or is-active to enhance readability.The difference between a sub-module and  a state is that the State can be applied to layout and modules and the statee indicates a Javascript dependency. In the example there is a "is-collapsed" class, this shows a collapsed state.
+                </p>
+                <div class="result">
+                  <pre style="color:black;">
+
+          &lt;div id="header" class="is-collapsed"&gt;
+              &lt;form&gt;
+                  &lt;div class="msg is-error"&gt;
+                      There is an error!
+                  &lt;/div&gt;
+                  &lt;label for="searchbox" class="is-hidden"&gt;Search&lt;/label&gt;
+                  &lt;input type="search" id="searchbox"&gt;
+              &lt;/form&gt;
+          &lt;/div&gt;
+
+                  </pre>
+                </div>
             <h2 class="main-section-sg-by-emiloberg" id="section-ThemeRules">Theme Rules</h2>
             <p> Theme rules are much the same as state rules but differ in that they define a global set of designs for
-                theming the site.</p>
+                theming the site. For example Themes can affect any of the primary types. It could override base styles like default link colours. It could change module elements such as chrome colours and borders. It could affect layout with different arrangements. It could also alter how states look.
+                Let’s say you have a dialog module that needs to have a border colour of blue, the border itself would be initially defined in the module and then the theme defines the colour:</p>
+                <div class="result"><code style="color:black;">
+          // in module-name.css
+          .mod {
+              border: 1px solid;
+          }
+
+          // in theme.css
+          .mod {
+              border-color: blue;
+          }
+                  </code>
+                </div>
         </div>
     </div>
     <div class="section" id="Components-Ionic" data-section="Components" data-heading="Ionic">
